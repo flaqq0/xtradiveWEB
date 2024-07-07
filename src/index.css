@@ -1,0 +1,25 @@
+@import url("./assets/styles/1-settings/fontsFamilies.css");
+@import url("./assets/styles/2-generic/reset.css");
+@import url("./assets/styles/2-generic/tailwind.css");
+@import url("./assets/styles/3-elements/fuentes.css");
+
+.p-accordion-header-link{
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+}
+
+.p-accordion-header	{
+    /* background-color: red; */
+}
+
+.p-accordion-content{
+    background-color: transparent;
+    border: none;
+    padding: 0rem;
+    /* background-color: red; */
+}
+
+.p-accordion{
+    /* background-color: red; */
+}

@@ -1,0 +1,74 @@
+{
+  "teachers": [
+    {
+      "id": "3",
+      "name": "Emily Johnson",
+      "category": "History",
+      "description": "Specialist in Modern History",
+      "users": 110,
+      "posts": 45,
+      "action": "Edit"
+    },
+    {
+      "id": "4",
+      "name": "Michael Brown",
+      "category": "Literature",
+      "description": "Focus on English Literature",
+      "users": 85,
+      "posts": 25,
+      "action": "Edit"
+    }
+  ],
+  "courses": [
+    {
+      "id": "C001",
+      "name": "Algebra I",
+      "teacherCode": "T001"
+    },
+    {
+      "id": "C003",
+      "name": "Calculus",
+      "teacherCode": "T001"
+    }
+  ],
+  "universities": [
+    {
+      "id": "U001",
+      "name": "Harvard University",
+      "category": "Ivy League",
+      "description": "Prestigious university in Cambridge, MA",
+      "users": 20000,
+      "posts": 500,
+      "action": "Edit"
+    },
+    {
+      "id": "U003",
+      "name": "Stanford University",
+      "category": "Private",
+      "description": "Renowned university in Stanford, CA",
+      "users": 15000,
+      "posts": 300,
+      "action": "Edit"
+    }
+  ],
+  "careers": [
+    {
+      "id": "CR001",
+      "name": "Computer Science",
+      "department": "Engineering",
+      "duration": 4,
+      "credits": 120,
+      "degree": "Bachelor's",
+      "action": "Edit"
+    },
+    {
+      "id": "CR005",
+      "name": "Medicine",
+      "department": "Health Sciences",
+      "duration": 6,
+      "credits": 180,
+      "degree": "Doctorate",
+      "action": "Edit"
+    }
+  ]
+}
