@@ -1,24 +1,17 @@
 import axios from 'axios';
 import {jwtDecode} from 'jwt-decode';
 
-const BACKEND_URL = 'http://54.204.123.91:8080/';
+const BACKEND_URL = 'http://3.231.209.124:8080/';
 
-// Decodificar el rol del token JWT
 export const getRoleBasedOnToken = () => {
   const token = localStorage.getItem('token');
-  if (!token) return null;
   const decodedToken = jwtDecode(token);
   return decodedToken.role;
 }
 
-// Iniciar sesión y obtener token
-export const fetchLogin = async (body) => {
+export const fetchLogin = async (email, password) => {
   try {
-    const response = await axios.post(`${BACKEND_URL}auth/login`, body, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await axios.post(`${BACKEND_URL}auth/login`, {email, password});
 
     if (response.status === 200) {
       localStorage.setItem('token', response.data.token);

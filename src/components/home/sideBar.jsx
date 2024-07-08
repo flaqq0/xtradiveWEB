@@ -1,4 +1,5 @@
 import React from 'react';
+import './All.css'
 import {SidebarItem} from './SidebarItem';
 
 const Sidebar = ({ setSelectedPage }) => {

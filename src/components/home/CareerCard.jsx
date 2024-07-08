@@ -1,4 +1,5 @@
 import React from 'react';
+import './All.css'
 
 const CareerCard = ({ name, onClick }) => {
   return (

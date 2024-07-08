@@ -1,9 +1,11 @@
-import {LoginForm }from "../components/auth/loginForm"
-export const LoginPage = () =>{
-    
-    return(
-        <div className="min-h-screen max-w-full flex justify-center items-center bg-slate-950">
-            <LoginForm></LoginForm>
-        </div>
-    )
-}
+import React from 'react';
+import { LoginForm } from '../components/auth/LoginForm';
+import '../components/auth/Login.css'; 
+
+export const LoginPage = () => {
+  return (
+    <div className="login-page">
+      <LoginForm />
+    </div>
+  );
+};

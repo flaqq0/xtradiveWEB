@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import UniversityCard from './UniversityCard';
 import CareersGrid from './CareersGrid';
-
+import './All.css'
 const UniversitiesGrid = () => {
   const [selectedUniversity, setSelectedUniversity] = useState(null);
 

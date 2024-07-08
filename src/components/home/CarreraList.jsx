@@ -1,6 +1,6 @@
 import React from 'react';
 import {CarreraItem} from './CarreraItem';
-
+import './All.css'
 export const CarreraList = ({ carreras }) => {
   return (
     <div>

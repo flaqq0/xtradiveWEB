@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './All.css'
 const UniversityCard = ({ name, onClick }) => {
   return (
     <div className="card" onClick={onClick}>

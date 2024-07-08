@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './All.css'
 const ProfessorCard = ({ name }) => {
   return (
     <div className="card">

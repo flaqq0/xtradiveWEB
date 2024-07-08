@@ -1,6 +1,6 @@
 import React from 'react';
 import {PostCard} from './PostCard';
-
+import './All.css'
 const Forum = () => {
   return (
     <div className="forum">
