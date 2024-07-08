@@ -6,7 +6,7 @@ import { Button } from "primereact/button";
 
 async function getTeachers() {
   try {
-    const response = await fetch('http://localhost:3000/teachers');
+    const response = await fetch('http://localhost:5173/teachers');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -21,7 +21,7 @@ async function getTeachers() {
 
 async function deleteTeacher(id) {
   try {
-    const response = await fetch(`http://localhost:3000/teachers/${id}`, {
+    const response = await fetch(`http://localhost:5173/teachers/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'

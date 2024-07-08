@@ -6,7 +6,7 @@ import TableHeader from "./tableHeader";
 
 async function getUniversities() {
   try {
-    const response = await fetch('http://localhost:3000/universities');
+    const response = await fetch('http://localhost:5173/universities');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -21,7 +21,7 @@ async function getUniversities() {
 
 async function deleteUniversity(id) {
   try {
-    const response = await fetch(`http://localhost:3000/universities/${id}`, {
+    const response = await fetch(`http://localhost:5173/universities/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
