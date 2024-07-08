@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CarreraForm = ({ onAddCarrera }) => {
+export const CarreraForm = ({ onAddCarrera }) => {
   const [form, setForm] = useState({
     nombre: ''
   });
@@ -30,6 +30,4 @@ const CarreraForm = ({ onAddCarrera }) => {
       <button type="submit">Agregar Carrera</button>
     </form>
   );
-};
-
-export default CarreraForm;
+}

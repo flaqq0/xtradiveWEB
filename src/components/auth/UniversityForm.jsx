@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const UniversityForm = ({ onAddUniversity }) => {
+export const UniversityForm = ({ onAddUniversity }) => {
   const [form, setForm] = useState({
     nombre: '',
     direccion: '',
@@ -29,23 +29,7 @@ const UniversityForm = ({ onAddUniversity }) => {
         onChange={handleChange}
         placeholder="Nombre"
       />
-      <input
-        type="text"
-        name="direccion"
-        value={form.direccion}
-        onChange={handleChange}
-        placeholder="Dirección"
-      />
-      <input
-        type="text"
-        name="telefono"
-        value={form.telefono}
-        onChange={handleChange}
-        placeholder="Teléfono"
-      />
       <button type="submit">Agregar Universidad</button>
     </form>
   );
-};
-
-export default UniversityForm;
+}

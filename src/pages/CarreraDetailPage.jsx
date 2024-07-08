@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getCarrera, deleteCarrera } from '../api';
+import { getCarrera, deleteCarrera } from '../services/api';
 
-const CarreraDetailPage = () => {
+export const CarreraDetailPage = () => {
   const { id } = useParams();
   const [carrera, setCarrera] = useState(null);
   const [error, setError] = useState(null);
@@ -41,5 +41,3 @@ const CarreraDetailPage = () => {
     </div>
   );
 };
-
-export default CarreraDetailPage;

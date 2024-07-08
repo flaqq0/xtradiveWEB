@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const SidebarItem = ({ label, onClick }) => {
+export const SidebarItem = () => {
   return (
     <li onClick={onClick}>
       {label}
     </li>
-  );
-};
-
-export default SidebarItem;
+  )
+}

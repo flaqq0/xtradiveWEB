@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getProfesor, deleteProfesor } from '../api';
+import { getProfesor, deleteProfesor } from '../services/api';
 
-const ProfesorDetailPage = () => {
+export const ProfesorDetailPage = () => {
   const { id } = useParams();
   const [profesor, setProfesor] = useState(null);
   const [error, setError] = useState(null);
@@ -40,6 +40,5 @@ const ProfesorDetailPage = () => {
       <button onClick={handleDelete}>Eliminar</button>
     </div>
   );
-};
 
-export default ProfesorDetailPage;
+}

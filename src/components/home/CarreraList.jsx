@@ -1,7 +1,7 @@
 import React from 'react';
 import {CarreraItem} from './CarreraItem';
 
-const CarreraList = ({ carreras }) => {
+export const CarreraList = ({ carreras }) => {
   return (
     <div>
       {carreras.map((carrera) => (
@@ -9,6 +9,4 @@ const CarreraList = ({ carreras }) => {
       ))}
     </div>
   );
-};
-
-export default CarreraList;
+}

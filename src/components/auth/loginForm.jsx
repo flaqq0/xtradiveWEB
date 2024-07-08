@@ -27,7 +27,7 @@ export const LoginForm = () => {
                 console.log(response)
             if (getRoleBasedOnToken() == 'ROLE_ADMIN'){
                 setError(null);
-                navigate('/dashboard');
+                navigate('/home');
             } else {
                 alert('No eres un administrador');
             }

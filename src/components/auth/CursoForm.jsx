@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-const CursoForm = ({ onAddCurso }) => {
+export const CursoForm = ({ onAddCurso }) => {
   const [form, setForm] = useState({
     nombre: '',
     descripcion: ''
@@ -38,6 +37,4 @@ const CursoForm = ({ onAddCurso }) => {
       <button type="submit">Agregar Curso</button>
     </form>
   );
-};
-
-export default CursoForm;
+}

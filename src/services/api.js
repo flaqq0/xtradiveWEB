@@ -1,5 +1,5 @@
 import axios from 'axios';
-import jwtDecode from 'jwt-decode';
+import {jwtDecode} from 'jwt-decode';
 
 const BACKEND_URL = 'http://54.204.123.91:8080/';
 
@@ -429,4 +429,50 @@ export const removeProfesorFromCurso = async (cursoId, profesorId) => {
     console.error('Error:', error.message);
     throw error;
   }
+};
+export const getAllProfesores = async () => {
+  const response = await axios.get(`${BACKEND_URL}profesor`);
+  return response.data;
+};
+
+export const getProfesor = async (id) => {
+  const response = await axios.get(`${BACKEND_URL}profesor/${id}`);
+  return response.data;
+};
+
+export const createProfesor = async (profesor) => {
+  const response = await axios.post(`${BACKEND_URL}profesor`, profesor);
+  return response.data;
+};
+
+export const updateProfesor = async (id, profesor) => {
+  const response = await axios.put(`${BACKEND_URL}profesor/${id}`, profesor);
+  return response.data;
+};
+
+export const deleteProfesor = async (id) => {
+  const response = await axios.delete(`${BACKEND_URL}profesor/${id}`);
+  return response.data;
+};
+
+export const getAllCarreras = async () => {
+  const response = await axios.get(`${BACKEND_URL}carrera`);
+  return response.data;
+};
+
+
+export const updateCarrera = async (id, carrera) => {
+  const response = await axios.put(`${BACKEND_URL}carrera/${id}`, carrera);
+  return response.data;
+};
+
+export const getAllCursos = async () => {
+  const response = await axios.get(`${BACKEND_URL}cursos/all`);
+  return response.data;
+};
+
+
+export const updateCurso = async (id, curso) => {
+  const response = await axios.put(`${BACKEND_URL}cursos/${id}`, curso);
+  return response.data;
 };

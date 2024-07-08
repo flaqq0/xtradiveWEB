@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { getAllUniversities, createUniversity, getAllCarreras, createCarrera, getAllCursos, createCurso, getAllProfesores, createProfesor } from '../api';
-import UniversityList from './UniversityList';
-import UniversityForm from '../components/home/UniversityForm';
-import CarreraList from '../components/home/CarreraList';
-import CarreraForm from '../components/home/CarreraForm';
-import CursoList from '../components/home/CursoList';
-import CursoForm from '../components/auth/CursoForm';
-import ProfesorList from '../components/auth/ProfesorList';
-import ProfesorForm from '../components/auth/ProfesorForm';
+import { getAllUniversities, createUniversity, getAllCarreras, createCarrera, getAllCursos, createCurso, getAllProfesores, createProfesor } from '../services/api';
+import {UniversityList} from '../components/home/UniversityList';
+import {UniversityForm} from '../components/auth/UniversityForm';
+import {CarreraList} from '../components/home/CarreraList';
+import {CarreraForm} from '../components/auth/CarreraForm';
+import {CursoList} from '../components/home/CursoList';
+import {CursoForm} from '../components/auth/CursoForm';
+import {ProfesorList} from '../components/home/ProfesorList';
+import {ProfesorForm} from '../components/auth/ProfesorForm';
 
-const HomePage = () => {
+export const HomePage = () => {
   const [universities, setUniversities] = useState([]);
   const [carreras, setCarreras] = useState([]);
   const [cursos, setCursos] = useState([]);
@@ -91,6 +91,5 @@ const HomePage = () => {
       <ProfesorList profesores={profesores} />
     </div>
   );
-};
 
-export default HomePage;
+}

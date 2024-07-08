@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getCurso, updateCurso } from '../api';
+import { getCurso, updateCurso } from '../services/api';
 
-const CursoEditPage = () => {
+export const CursoEditPage = () => {
   const { id } = useParams();
   const [form, setForm] = useState({
     nombre: '',
@@ -63,6 +63,4 @@ const CursoEditPage = () => {
       </form>
     </div>
   );
-};
-
-export default CursoEditPage;
+}

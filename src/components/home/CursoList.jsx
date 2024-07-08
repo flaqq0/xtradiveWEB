@@ -1,7 +1,7 @@
 import React from 'react';
 import {CursoItem} from './CursoItem';
 
-const CursoList = ({ cursos }) => {
+export const CursoList = ({ cursos }) => {
   return (
     <div>
       {cursos.map((curso) => (
@@ -9,6 +9,4 @@ const CursoList = ({ cursos }) => {
       ))}
     </div>
   );
-};
-
-export default CursoList;
+}

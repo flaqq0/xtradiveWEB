@@ -1,7 +1,7 @@
 import React from 'react';
 import {UniversityItem} from './UniversityItem';
 
-const UniversityList = ({ universities }) => {
+export const UniversityList = ({ universities }) => {
   return (
     <div>
       {universities.map((university) => (
@@ -9,6 +9,4 @@ const UniversityList = ({ universities }) => {
       ))}
     </div>
   );
-};
-
-export default UniversityList;
+}

@@ -1,5 +1,5 @@
 import {LoginForm }from "../components/auth/loginForm"
-export default function LoginPage(){
+export const LoginPage = () =>{
     
     return(
         <div className="min-h-screen max-w-full flex justify-center items-center bg-slate-950">

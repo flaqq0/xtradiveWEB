@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ProfesorForm = ({ onAddProfesor }) => {
+export const ProfesorForm = ({ onAddProfesor }) => {
   const [form, setForm] = useState({
     nombre: '',
     email: ''
@@ -38,6 +38,4 @@ const ProfesorForm = ({ onAddProfesor }) => {
       <button type="submit">Agregar Profesor</button>
     </form>
   );
-};
-
-export default ProfesorForm;
+}

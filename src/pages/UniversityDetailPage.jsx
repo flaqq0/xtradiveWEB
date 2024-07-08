@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getUniversity, deleteUniversity } from '../api';
+import { getUniversity, deleteUniversity } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 
-const UniversityDetailPage = () => {
+export const UniversityDetailPage = () => {
   const { id } = useParams();
   const [university, setUniversity] = useState(null);
   const [error, setError] = useState(null);
@@ -42,6 +42,5 @@ const UniversityDetailPage = () => {
       <button onClick={handleDelete}>Eliminar</button>
     </div>
   );
-};
 
-export default UniversityDetailPage;
+}

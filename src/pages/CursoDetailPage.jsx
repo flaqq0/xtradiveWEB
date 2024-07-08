@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getCurso, deleteCurso } from '../api';
+import { getCurso, deleteCurso } from '../services/api';
 
-const CursoDetailPage = () => {
+export const CursoDetailPage = () => {
   const { id } = useParams();
   const [curso, setCurso] = useState(null);
   const [error, setError] = useState(null);
@@ -41,6 +41,4 @@ const CursoDetailPage = () => {
       <button onClick={handleDelete}>Eliminar</button>
     </div>
   );
-};
-
-export default CursoDetailPage;
+}

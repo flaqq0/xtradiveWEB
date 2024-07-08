@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getCarrera, updateCarrera } from '../api';
+import { getCarrera, updateCarrera } from '../services/api';
 
-const CarreraEditPage = () => {
+export const CarreraEditPage = () => {
   const { id } = useParams();
   const [form, setForm] = useState({
     nombre: ''
@@ -55,6 +55,4 @@ const CarreraEditPage = () => {
       </form>
     </div>
   );
-};
-
-export default CarreraEditPage;
+}
