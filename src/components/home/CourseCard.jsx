@@ -1,0 +1,12 @@
+import React from 'react';
+
+const CourseCard = ({ name, onClick }) => {
+  return (
+    <div className="card" onClick={onClick}>
+      <p>{name}</p>
+      <button>Edit</button>
+    </div>
+  );
+};
+
+export default CourseCard;
